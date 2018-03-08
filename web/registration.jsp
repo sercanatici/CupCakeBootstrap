@@ -9,26 +9,36 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="background1.css">
+        <link rel="stylesheet" type="text/css" href="bar.css"> 
         <title>JSP Page</title>
     </head>
     <body>
-        <h1>Create a new Account</h1>
+        <ul>
+            <li><a class="active" href="index.jsp">Home</a></li>
+            <li><a href="input.jsp">Login</a></li>
+            <li><a href="registration.jsp">Register</a></li>
+        </ul>        
+    <center><br><br>
+        <h1>Create a new Account</h1><br>
+        
         <form  method="post" action="RegistrationController">
             New Username:
-            <input type="text" name="newuser"><br>
+            <input type="text" name="newuser"><br><br>
             New Password:
-            <input type="password" name="newpass"><br>
+            <input type="password" name="newpass"><br><br>
             Balance:
-            <input type="number" name="balance">  <br>
-            <input type="submit" value="Register" name="regist">
-            
-            
-            
-           
+            <input type="number" name="balance">  <br><br>
+            <button type="submit" name="regist" class="btn btn-primary">Register</button>
         </form>
-        <form action="input.jsp">
-            <input type="submit" name="login" value="back to login"> 
         
+        <form action="input.jsp"><br>
+            <button type="submit" name="login" class="btn btn-primary">back to login</button>
         </form>
+    </center>
     </body>
 </html>
